@@ -78,4 +78,5 @@ a {
     background-color: white;
     color: rgb(34, 34, 34);
     cursor: pointer;
+    transition: 300ms;
 }
