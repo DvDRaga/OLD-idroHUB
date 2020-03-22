@@ -23,13 +23,21 @@ a:link, a:visited, a:hover, a:active {
     width: 100%;
     height: var(--headerHeight);
     background-color: rgb(51, 73, 170);
-    display: block;
+    display: flex;
     text-align: center;
-    line-height: var(--headerHeight);
+    /*line-height: var(--headerHeight);*/
 }
 h1 {
-    display: contents;
+    margin: auto;
+    background-color: inherit;
 }
+img {
+    height: 40px;
+    vertical-align: text-top;
+    background-color: inherit;
+    margin-right: 5px;
+}
+
 .content {
     display: block;
     width: 100%;
