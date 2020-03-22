@@ -70,7 +70,9 @@ a {
     margin: auto;
     text-align: center;
 }
-.credits {
+
+
+.creditsBut {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -81,13 +83,33 @@ a {
     text-align: center;
     line-height: 30px;
     font-weight: bold;
+    z-index: 2;
 }
-.credits:hover {
+.creditsBut:hover {
     background-color: white;
     color: rgb(34, 34, 34);
     cursor: pointer;
     transition: 300ms;
 }
+#credits {
+    position: absolute;
+    background-color: rgba(48, 48, 48, 0.85);
+    vertical-align: middle;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#credits p {
+    background-color: rgb(34, 34, 34);
+    margin: auto;
+    padding: 50px;
+    border: 3px solid rgb(85, 116, 255);
+    border-radius: 7px;
+}
+
+
 @media screen and (max-width: 969px) {
     :root {
         --headerHeight: 80px;
