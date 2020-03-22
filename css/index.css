@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+:root {
+    --headerHeight: 150px;
+}
+
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.header {
+    width: 100%;
+    height: var(--headerHeight);
+    background-color: rgb(51, 73, 170);
+    display: block;
+    text-align: center;
+    line-height: var(--headerHeight);
+}
+h1 {
+    display: contents;
+}
+.content {
+    display: block;
+    width: 100%;
+    height: calc(100% - var(--headerHeight) - 30px);
+    text-align: center;
+    padding-top: 30px;
+    overflow: auto;
+}
+ul {
+    max-width: 980px;
+    display: inline-block;
+}
+li {
+    display: inline-flex;
+    width: calc(100% - 80px);
+    margin: 20px;
+    max-width: 400px;
+    min-height: 50px;
+    background-color: rgb(48, 48, 48);
+    padding: 5px 20px;
+    border-bottom: 3px solid rgb(85, 116, 255);
+    border-radius: 3px;
+}
+li:hover {
+    background-color: rgb(85, 116, 255);
+    transition: 300ms;
+    cursor: pointer;
+}
+a {
+    margin: auto;
+    text-align: center;
+}
+.credits {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+.credits:hover {
+    background-color: white;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+}
