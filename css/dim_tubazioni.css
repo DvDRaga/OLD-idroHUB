@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
+:root {
+    --headerHeight: 150px;
+}
+
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    background-color: inherit;
+}
+
+.header {
+    width: 100%;
+    height: var(--headerHeight);
+    background-color: rgb(51, 73, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    margin: auto;
+    background-color: inherit;
+}
+img {
+    height: 40px;
+    vertical-align: text-top;
+    background-color: inherit;
+    margin-right: 5px;
+}
+
+
+
+@media screen and (max-width: 969px) {
+    :root {
+        --headerHeight: 80px;
+    }
+}
