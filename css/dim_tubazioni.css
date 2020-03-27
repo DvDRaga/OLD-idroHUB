@@ -49,10 +49,10 @@ img {
     align-items: center;
 }
 .input_row {
-    display: flex;
+    display: block; /* flex*/
     width: 350px;
-    flex-direction: row;
-    justify-content: center;
+    /*flex-direction: row;
+    justify-content: center;*/
     border-bottom: 2px solid white;
     margin-bottom: 20px;
     padding-bottom: 5px;
@@ -67,6 +67,7 @@ p:hover {
 }
 .label {
     width: 100px;
+    display: inline-block;
 }
 input {
     width: calc(100% - 150px);
@@ -74,6 +75,7 @@ input {
     border: none;
     text-align: right;
     font-size: 16px;
+    display: inline-block;
 }
 input:focus{
     outline: none;
@@ -81,6 +83,7 @@ input:focus{
 .unit {
     width: 40px;
     margin-left: 10px;
+    display: inline-block;
 }
 
 /* Chrome, Safari, Edge, Opera */
