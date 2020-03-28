@@ -8,8 +8,6 @@
 :root {
     --headerHeight: 150px;
 }
-
-
 body, html {
     height: 100%;
     width: 100%;
@@ -19,6 +17,7 @@ a:link, a:visited, a:hover, a:active {
     background-color: inherit;
 }
 
+/*--- INIZIO STILE DELL'HEADER ---*/
 .header {
     width: 100%;
     height: var(--headerHeight);
@@ -37,24 +36,22 @@ img {
     background-color: inherit;
     margin-right: 5px;
 }
+/*--- FINE STILE DELL'HEADER ---*/
 
-
+/*--- INIZIO STILE DEL CONTENT ---*/
 .content {
-    display: flex;
-    flex-direction: column;
+    display: block;
     width: calc(100% - 2 * 20px);
     height: calc(100% - 2 * 20px - var(--headerHeight));
-    overflow: auto;
     padding: 20px;
-    align-items: center;
+    overflow-y: auto;
 }
 .input_row {
-    display: block; /* flex*/
+    display: block;
     width: 100%;
     max-width: 350px;
-    /*flex-direction: row;
-    justify-content: center;*/
     border-bottom: 2px solid white;
+    margin: auto;
     margin-bottom: 20px;
     padding-bottom: 5px;
 }
@@ -100,8 +97,6 @@ select {
     width: calc(100% - 150px);
     max-width: 200px;
     border: none;
-    /*text-align: right;
-    /*font-size: 16px;*/
     display: inline-block;
     margin: none;
     padding: none;
@@ -109,7 +104,6 @@ select {
     outline: none;
     text-align-last: right;
 }
-
 .calc_button {
     width: 100%;
     max-width: 350px;
@@ -118,18 +112,21 @@ select {
     border-bottom: 2px solid white;
     text-align: center;
     line-height: 50px;
+    margin: auto;
 }
 .calc_button:hover {
     cursor: pointer;
     border-bottom: 2px solid rgb(85, 116, 255);
     transition: 300ms;
 }
-
+/*--- INIZIO CONTENITORE RISULTATO ---*/
 .result_content {
-    margin-top: 40px;
-    display: block;
-    max-width: 100%;
-    overflow: auto;
+    margin: auto;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+.result_content>* {
+    margin: auto;
 }
 table {
     border-collapse: collapse;
@@ -162,14 +159,12 @@ td:nth-child(3) {
     min-width: 90px;
     text-align: right;
 }
+/*--- FINE CONTENITORE RISULTATO ---*/
+/*--- FINE STILE DEL CONTENT ---*/
 
+/*--- RIDUZIONE HEADER SCHERMI PICCOLI ---*/
 @media screen and (max-width: 969px) {
     :root {
         --headerHeight: 80px;
     }
 }
-/*@media screen and (max-width: 390px) {
-    .content {
-        align-items: flex-start;
-    }
-}*/
