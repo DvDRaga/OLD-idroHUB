@@ -140,6 +140,14 @@ td, th {
     font-weight: normal;
     padding: 10px 10px 0 10px;
 }
+tr:nth-child(odd):not(:nth-child(1)) > * {
+    background-color: rgb(48, 48, 48);
+}
+th:first-child {
+    position: sticky;
+    position: -webkit-sticky;
+    left: 0;
+}
 /*
 th:nth-child(1) {
     min-width: 120px;
@@ -164,10 +172,10 @@ td:nth-child(3) {
     text-align: right;
 }
 */
-tr:nth-child(even) > * {
-    background-color: rgb(40, 40, 40);
 
-}
+/*th:first-child {
+    position: absolute;
+}*/
 
 
 /*--- RIDUZIONE HEADER SCHERMI PICCOLI ---*/
