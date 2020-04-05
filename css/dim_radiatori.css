@@ -120,62 +120,38 @@ select {
     border-bottom: 2px solid rgb(85, 116, 255);
     transition: 300ms;
 }
-
-
 /*--- INIZIO CONTENITORE RISULTATO ---*/
 .result_content {
     margin: auto;
     overflow-x: auto;
     padding: 20px 0;
 }
-.result_content>* {
-    margin: auto;
-}
 table {
     border-collapse: collapse;
+    margin: 10px auto;
 }
 td, th {
     vertical-align: middle;
+    text-align: center;
     border-bottom: 2px solid rgb(85, 116, 255);
     font-weight: normal;
-    padding: 10px 10px 0 10px;
+    padding: 2px 10px 4px 10px;
+    box-sizing: border-box;
 }
-tr:nth-child(odd):not(:nth-child(1)) > * {
-    background-color: rgb(48, 48, 48);
+tr:first-child th:nth-child(even), tr:nth-child(n + 2) *:nth-child(6n + 2), tr:nth-child(n + 2) *:nth-child(6n + 3), tr:nth-child(n + 2) *:nth-child(6n + 4) {
+    background-color: rgb(40, 43, 49);
 }
 th:first-child {
     position: sticky;
     position: -webkit-sticky;
     left: 0;
 }
-/*
-th:nth-child(1) {
-    min-width: 120px;
-    height: 30px;
-    text-align: center;
-}
-th:nth-child(2) {
-    min-width: 120px;
-    text-align: center;
-}
-td:nth-child(2) {
-    min-width: 120px;
+.tesi2, .tesi3, .tesi4, .tesi5, .tesi6 {
     text-align: right;
 }
-
-th:nth-child(3) {
-    min-width: 90px;
+.tesi2:nth-child(2), .tesi3:nth-child(5), .tesi4:nth-child(8), .tesi5:nth-child(11), .tesi6:nth-child(14) {
     text-align: center;
 }
-td:nth-child(3) {
-    min-width: 90px;
-    text-align: right;
-}
-*/
-
-/*th:first-child {
-    position: absolute;
-}*/
 
 
 /*--- RIDUZIONE HEADER SCHERMI PICCOLI ---*/
