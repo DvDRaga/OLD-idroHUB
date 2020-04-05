@@ -122,9 +122,23 @@ li>a:hover {
 }
 
 
-
+/*--- RIDUZIONE HEADER SCHERMI PICCOLI ---*/
 @media screen and (max-width: 890px) {
     :root {
         --headerHeight: 80px;
     }
+}
+
+
+/*--- STILE SCROLLBAR ---*/
+::-webkit-scrollbar {
+    width:10px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(34, 34, 34);
+    border-radius:0px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(48, 48, 48);
+    border-radius:0px;
 }
