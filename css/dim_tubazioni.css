@@ -17,6 +17,7 @@ a:link, a:visited, a:hover, a:active {
     background-color: inherit;
 }
 
+
 /*--- INIZIO STILE DELL'HEADER ---*/
 .header {
     width: 100%;
@@ -36,7 +37,7 @@ img {
     background-color: inherit;
     margin-right: 5px;
 }
-/*--- FINE STILE DELL'HEADER ---*/
+
 
 /*--- INIZIO STILE DEL CONTENT ---*/
 .content {
@@ -119,6 +120,8 @@ select {
     border-bottom: 2px solid rgb(85, 116, 255);
     transition: 300ms;
 }
+
+
 /*--- INIZIO CONTENITORE RISULTATO ---*/
 .result_content {
     margin: auto;
@@ -159,8 +162,7 @@ td:nth-child(3) {
     min-width: 90px;
     text-align: right;
 }
-/*--- FINE CONTENITORE RISULTATO ---*/
-/*--- FINE STILE DEL CONTENT ---*/
+
 
 /*--- RIDUZIONE HEADER SCHERMI PICCOLI ---*/
 @media screen and (max-width: 969px) {
