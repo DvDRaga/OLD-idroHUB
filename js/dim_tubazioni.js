@@ -12,4 +12,6 @@ var calc = () => {
         var vel = port / (Math.PI * Math.pow(data.diamTub[i], 2) * 3.6 / 4)
         velCell.innerHTML = vel.toFixed(2) + " m/s"
     }
+    document.getElementsByTagName("table")[0].scrollIntoView()
+    document.getElementsByClassName("content")[0].scrollTop -= 10
 }
