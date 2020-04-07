@@ -25,3 +25,4 @@ var calc = () => {
     document.getElementsByClassName("content")[0].scrollTop -= 10
     document.documentElement.style.setProperty("--headerHeight", "80px")
 }
+document.addEventListener("keydown", (ev) => {if (ev.keyCode === 13) calc()})

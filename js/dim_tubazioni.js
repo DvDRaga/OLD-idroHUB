@@ -15,3 +15,4 @@ var calc = () => {
     document.getElementsByTagName("table")[0].scrollIntoView()
     document.getElementsByClassName("content")[0].scrollTop -= 10
 }
+document.addEventListener("keydown", (ev) => {if (ev.keyCode === 13) calc()})
